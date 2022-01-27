@@ -1,0 +1,1 @@
+window.jQuery.easing.def || document.write('<script src="./assets/js/libs/jquery.easing.min.js"><\/script>')

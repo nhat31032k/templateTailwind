@@ -1,0 +1,252 @@
+@import "sass/header";
+@import "sass/header-sp";
+@import "sass/firstView";
+/* cyrillic-ext */
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/fonts.gstatic.com/s/oswald/v40/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUtiZTaR.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+
+/* cyrillic */
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/fonts.gstatic.com/s/oswald/v40/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUJiZTaR.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+
+/* vietnamese */
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/fonts.gstatic.com/s/oswald/v40/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUliZTaR.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+
+/* latin-ext */
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/fonts.gstatic.com/s/oswald/v40/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZTaR.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+/* latin */
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/fonts.gstatic.com/s/oswald/v40/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUZiZQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th,
+td,
+pre,
+code,
+blockquote,
+form,
+fieldset,
+legend,
+input,
+textarea,
+figcaption,
+figure {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: 400
+}
+
+li {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 400
+}
+
+q:before,
+q:after {
+    content: ''
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit
+}
+
+input,
+textarea,
+select {
+    *font-size: 100%
+}
+
+legend {
+    color: #fff
+}
+
+hr {
+    display: none
+}
+
+img {
+    vertical-align: bottom
+}
+
+select,
+input,
+button,
+textarea {
+    font-size: 99%
+}
+
+table {
+    font-size: inherit;
+    font: 100%;
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+pre,
+code,
+kbd,
+samp,
+tt {
+    font-family: monospace;
+    *font-size: 108%;
+    line-height: 100%
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-height: 999999px;
+    outline: none;
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+    background-color: #8ea99b;
+    color: #000;
+    font-family: yu gothic, YuGothic, hiragino kaku gothic pron, メイリオ, Meiryo, sans-serif;
+    font-feature-settings: "palt";
+    font-size: 16px;
+    letter-spacing: .07em;
+    line-height: 1.8;
+    word-wrap: break-word;
+    transition: background-color .4s ease;
+    &.is-family {
+        background-color: #fcddab;
+    }
+    &.is-family .header {
+        background-color: #ffc66b;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 1rem;
+        &.is-family .header {
+            background-color: #fcddab;
+        }
+    }
+}

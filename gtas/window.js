@@ -1,0 +1,1 @@
+window.jQuery || document.write('<script src="./assets/js/libs/jquery-3.6.0.min.js"><\/script>')

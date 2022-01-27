@@ -1,0 +1,112 @@
+.sp-only {
+    display: none;
+}
+
+.header__bgimg {
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center top;
+    width: 100%;
+    mix-blend-mode: luminosity;
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-image .4s;
+}
+
+.header__bgimg.is-img3 {
+    background-image: url("../img/common/header_bottomimg_3.png");
+}
+
+body.is-family .header__bgimg.is-img3 {
+    background-image: url("../img/common/header_bottomimg_3_family.png");
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        &__bgimg--sp {
+            width: 100%;
+            margin-top: 20px;
+            position: relative;
+            pointer-events: none;
+        }
+        &__bgimg--sp.is-img3 {
+            padding-top: 68.4%;
+        }
+        &__menuBtn {
+            background-color: #000;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 10;
+            & a {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+            &__inner {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 30px;
+                height: 10px;
+                margin: auto;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+    .header__menuBtn__inner:before {
+        top: 4px;
+        left: 0;
+        transform: rotate( 20deg);
+    }
+    .header__menuBtn__inner:before,
+    .header__menuBtn__inner:after {
+        content: "";
+        background-color: #fff;
+        display: block;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        transition: width .6s cubic-bezier(.25, 1, .5, 1);
+    }
+    .header__menuBtn a span {
+        background-color: #fff;
+        display: block;
+        width: 100%;
+        height: 2px;
+        transition: all .6s cubic-bezier(.25, 1, .5, 1);
+    }
+    .header__menuBtn__inner:after {
+        bottom: 4px;
+        right: 0;
+        transform: rotate( -20deg);
+    }
+    body.is-family .header__bgimg--sp.is-img3 .header__bgimg--sp__in {
+        background-image: url(../img/common/header_bottomimg_3_sp_family.png);
+    }
+    .header__bgimg--sp.is-img3 .header__bgimg--sp__in {
+        background-image: url(../img/common/header_bottomimg_3_sp.png);
+    }
+    .header__bgimg--sp__in {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        transition: background-image .4s;
+    }
+    .sp-only {
+        display: block;
+    }
+}
